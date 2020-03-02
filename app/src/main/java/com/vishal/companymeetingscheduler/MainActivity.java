@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         schedule_button.setOnClickListener(this);
 
         gson = new Gson();
+        scheduleList = new ArrayList<>();
 
         apiViewModel = new ApiViewModel();
         apiViewModel.callScheduleApi("01/03/2020");
